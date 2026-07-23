@@ -4,7 +4,7 @@ import os
 
 from dotenv import load_dotenv
 
-from src_v2.graph.builder import build_benchmark_graph
+from src.graph.builder import build_benchmark_graph
 
 # Load .env
 load_dotenv(".test.env")

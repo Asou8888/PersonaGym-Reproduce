@@ -1,17 +1,17 @@
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.state import CompiledStateGraph
 
-from src_v2.graph.routing import (
+from src.graph.routing import (
     dispatch_question_generation,
     dispatch_response_evaluation,
     dispatch_response_generation,
 )
-from src_v2.graph.state import BenchmarkState
-from src_v2.nodes.question_generation import generate_questions_for_task
-from src_v2.nodes.report_aggregation import aggregate_scores
-from src_v2.nodes.response_evaluation import evaluate_batch
-from src_v2.nodes.response_generation import generate_answer_for_question
-from src_v2.nodes.setting_selection import select_settings
+from src.graph.state import BenchmarkState
+from src.nodes.question_generation import generate_questions_for_task
+from src.nodes.report_aggregation import aggregate_scores
+from src.nodes.response_evaluation import evaluate_batch
+from src.nodes.response_generation import generate_answer_for_question
+from src.nodes.setting_selection import select_settings
 
 
 def _barrier(state: BenchmarkState) -> dict:

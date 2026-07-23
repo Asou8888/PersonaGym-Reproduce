@@ -1,5 +1,5 @@
-from src_v2.graph.state import BenchmarkState
-from src_v2.utils.aggregation import average
+from src.graph.state import BenchmarkState
+from src.utils.aggregation import average
 
 
 def aggregate_scores(state: BenchmarkState) -> dict:

@@ -2,15 +2,15 @@ import asyncio
 from typing import TypedDict
 from langchain_litellm import ChatLiteLLM
 
-from src_v2.config import RESPONSE_EVALUATION_EXAMPLE_CONFIG, RESPONSE_EVALUATION_JUDGE_CONFIGS
-from src_v2.models.schemas import BatchEvaluation, ScoreExampleBatch, ScoreExampleSet
-from src_v2.prompts.response_evaluation import (
+from src.config import RESPONSE_EVALUATION_EXAMPLE_CONFIG, RESPONSE_EVALUATION_JUDGE_CONFIGS
+from src.models.schemas import BatchEvaluation, ScoreExampleBatch, ScoreExampleSet
+from src.prompts.response_evaluation import (
     BATCH_EVALUATION_PROMPT,
     RUBRIC_SYSTEM_PROMPT,
     RUBRICS_BY_TASK,
     SCORE_EXAMPLE_GENERATION_PROMPT,
 )
-from src_v2.utils.aggregation import average
+from src.utils.aggregation import average
 
 
 class EvaluationBatchTask(TypedDict):

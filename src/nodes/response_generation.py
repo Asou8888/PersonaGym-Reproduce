@@ -2,8 +2,8 @@ from typing import TypedDict
 
 from langchain_litellm import ChatLiteLLM
 
-from src_v2.config import RESPONSE_GENERATION_CONFIG
-from src_v2.prompts.persona import PERSONA_SYSTEM_PROMPT
+from src.config import RESPONSE_GENERATION_CONFIG
+from src.prompts.persona import PERSONA_SYSTEM_PROMPT
 
 
 class AnswerGenerationTask(TypedDict):

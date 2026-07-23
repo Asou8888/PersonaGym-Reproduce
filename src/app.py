@@ -2,10 +2,10 @@ import argparse
 import asyncio
 import json
 
-from src_v2.config import DEFAULT_N_QUESTIONS
-from src_v2.graph.builder import build_benchmark_graph
-from src_v2.services.persona_dataset import get_sample_persona
-from src_v2.services.results_writer import write_results
+from src.config import DEFAULT_N_QUESTIONS
+from src.graph.builder import build_benchmark_graph
+from src.services.persona_dataset import get_sample_persona
+from src.services.results_writer import write_results
 
 
 def parse_args() -> argparse.Namespace:

@@ -1,10 +1,10 @@
 from langchain_litellm import ChatLiteLLM
 
-from src_v2.config import SETTING_SELECTION_CONFIG
-from src_v2.data.settings_catalog import SETTINGS_CATALOG
-from src_v2.graph.state import BenchmarkState
-from src_v2.models.schemas import SettingSelection
-from src_v2.prompts.setting_selection import SETTING_SELECTION_PROMPT
+from src.config import SETTING_SELECTION_CONFIG
+from src.data.settings_catalog import SETTINGS_CATALOG
+from src.graph.state import BenchmarkState
+from src.models.schemas import SettingSelection
+from src.prompts.setting_selection import SETTING_SELECTION_PROMPT
 
 
 async def select_settings(state: BenchmarkState) -> dict:

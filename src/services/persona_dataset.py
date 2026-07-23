@@ -1,4 +1,4 @@
-from src_v2.data.sample_personas import SAMPLE_PERSONAS
+from src.data.sample_personas import SAMPLE_PERSONAS
 
 
 def list_sample_personas() -> list[str]:

@@ -3,8 +3,8 @@ import os
 
 from dotenv import load_dotenv
 
-from src_v2.graph.state import BenchmarkState
-from src_v2.nodes.setting_selection import select_settings
+from src.graph.state import BenchmarkState
+from src.nodes.setting_selection import select_settings
 
 # Load .env
 load_dotenv(".test.env")

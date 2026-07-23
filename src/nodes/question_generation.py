@@ -2,9 +2,9 @@ from typing import List, TypedDict
 
 from langchain_litellm import ChatLiteLLM
 
-from src_v2.config import QUESTION_GENERATION_CONFIG
-from src_v2.models.schemas import GeneratedQuestions
-from src_v2.prompts.question_generation import QUESTION_GENERATION_PROMPT
+from src.config import QUESTION_GENERATION_CONFIG
+from src.models.schemas import GeneratedQuestions
+from src.prompts.question_generation import QUESTION_GENERATION_PROMPT
 
 
 class QuestionGenerationTask(TypedDict):

@@ -4,9 +4,9 @@ import os
 
 from dotenv import load_dotenv
 
-from src_v2.data.evaluation_tasks import EVALUATION_TASK_REQUIREMENTS
-from src_v2.nodes.question_generation import generate_questions_for_task
-from src_v2.nodes.setting_selection import select_settings
+from src.data.evaluation_tasks import EVALUATION_TASK_REQUIREMENTS
+from src.nodes.question_generation import generate_questions_for_task
+from srcs.nodes.setting_selection import select_settings
 
 # Load .env
 load_dotenv(".test.env")

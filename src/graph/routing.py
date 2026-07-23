@@ -1,11 +1,11 @@
 from langgraph.types import Send
 
-from src_v2.config import EVALUATION_BATCH_SIZE
-from src_v2.data.evaluation_tasks import EVALUATION_TASK_REQUIREMENTS
-from src_v2.graph.state import BenchmarkState
-from src_v2.nodes.question_generation import QuestionGenerationTask
-from src_v2.nodes.response_evaluation import EvaluationBatchTask
-from src_v2.nodes.response_generation import AnswerGenerationTask
+from src.config import EVALUATION_BATCH_SIZE
+from src.data.evaluation_tasks import EVALUATION_TASK_REQUIREMENTS
+from src.graph.state import BenchmarkState
+from src.nodes.question_generation import QuestionGenerationTask
+from src.nodes.response_evaluation import EvaluationBatchTask
+from src.nodes.response_generation import AnswerGenerationTask
 
 
 def dispatch_question_generation(state: BenchmarkState) -> list[Send]:

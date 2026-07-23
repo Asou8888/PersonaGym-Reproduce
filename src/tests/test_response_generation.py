@@ -4,8 +4,8 @@ import os
 
 from dotenv import load_dotenv
 
-from src_v2.nodes.response_generation import generate_answer_for_question
-from src_v2.tests.test_question_generation import test_generate_questions
+from src.nodes.response_generation import generate_answer_for_question
+from src.tests.test_question_generation import test_generate_questions
 
 # Load .env
 load_dotenv(".test.env")
